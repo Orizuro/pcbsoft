@@ -1,0 +1,56 @@
+{
+    "version": "1.9",
+    "configurations": [
+        {
+            "name": "default",
+            "id": "",
+            "device": "PIC32MZ2048EFM100",
+            "imagePath": "./out/pcbtest/default.elf",
+            "toolProperties": "default-tool-base",
+            "tool": "PICkit 5",
+            "packs": [
+                {
+                    "name": "PIC32MZ-EF_DFP",
+                    "vendor": "Microchip",
+                    "version": "1.6.179"
+                }
+            ],
+            "fileSet": "default",
+            "toolchain": "default-XC32",
+            "userVariables": "default-uservariables"
+        }
+    ],
+    "propertyGroups": [
+        {
+            "name": "default-uservariables",
+            "type": "uservariables",
+            "properties": {}
+        },
+        {
+            "name": "default-XC32",
+            "type": "toolchain",
+            "provider": "microchip.toolchains:xc32@6.00",
+            "properties": {}
+        },
+        {
+            "name": "default-tool-base",
+            "type": "tool",
+            "properties": {
+                "communication.interface.jtag": "4wire",
+                "poweroptions.powerenable": true,
+                "voltagevalue": "3.33"
+            }
+        }
+    ],
+    "fileSets": [
+        {
+            "name": "default",
+            "files": [
+                {
+                    "include": "**/*",
+                    "exclude": "**/@(build|_build|out|cmake|.vscode)/**/*"
+                }
+            ]
+        }
+    ]
+}
