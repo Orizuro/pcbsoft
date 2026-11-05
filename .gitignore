@@ -3,5 +3,16 @@
 /cmake/
 /out/
 
+# MPLAB X project build/debug artifacts (regenerated on build)
+pcbsoft.X/build/
+pcbsoft.X/debug/
+pcbsoft.X/dist/
+pcbsoft.X/.generated_files/
+pcbsoft.X/queuelogs/
+pcbsoft.X/defmplabxtrace.log*
+
+# Machine-local MPLAB X project settings (tool serial numbers, local paths)
+pcbsoft.X/nbproject/private/
+
 # macOS
 .DS_Store

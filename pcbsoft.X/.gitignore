@@ -1,0 +1,13 @@
+# MPLAB X build/debug artifacts (regenerated on build)
+/build/
+/debug/
+/dist/
+/.generated_files/
+/queuelogs/
+defmplabxtrace.log*
+
+# Machine-local project settings (tool serial numbers, local paths)
+/nbproject/private/
+
+# macOS
+.DS_Store
